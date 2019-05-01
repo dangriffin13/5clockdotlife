@@ -19,7 +19,6 @@ def check_time_zone(location):
 
     time_string = requests.get(call_url).json()['time']
 
-    
     timestamp = datetime.strptime(time_string, "%Y-%m-%d %H:%M:%S")
 
     return timestamp.hour
