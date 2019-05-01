@@ -7,3 +7,140 @@
 html {
     font-size: 62.5%;
 }
+
+.banner-box {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.banner{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+
+}
+
+.location{
+    height: 10rem;
+}
+
+.drink-display-top {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.top {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50 %;
+}
+
+
+.drink__img {
+    padding-right: 10rem;
+    text-align: right;
+}
+
+.drink__img > img {
+    width: 11.5rem;
+    height: 13rem;
+
+}
+
+.drink__name {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 2.1rem;
+    line-height: 100 %;
+    vertical-align: middle;
+
+}
+
+.drink__name--centered {
+    position: absolute;
+    top: 50 %;
+    transform: translateY(-50 %);
+
+}
+
+
+.drink-display-bottom {
+    position: relative;
+}
+
+.bottom {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50 %;
+}
+
+.drink__instructions {
+    padding-left: 1rem;
+
+}
+
+.drink__ingredients {
+    position: relative;
+    top: 0;
+
+}
+
+
+
+.drink__ingredients--aligned {
+    float: right;
+    width: 21.5rem;
+    background: linear-gradient(140deg, rgba(99, 78, 72, 0.2), white 40%);
+    min-height: 15rem;
+}
+
+.drink__ingredients--aligned > h3 {
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+}
+
+
+
+@keyframes moveInLeft {
+    0 % {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80 % {
+        transform: translateX(1rem);
+    }
+    100 % {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInRight {
+    0 % {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80 % {
+        transform: translateX(-1rem);
+    }
+    100 % {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInBottom {
+    0 % {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100 % {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
