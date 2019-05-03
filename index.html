@@ -1,64 +1,55 @@
 <html>
-
-<head>
-
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-
-<body>
-
-    <div class='banner-box'>
-        
-        <!-- <div class='martini-img'>
-            <img width='150' src='https://mastergolflivestream.com/images/cocktails-clipart-cocktail-glass-2.jpg'/>
-        </div> -->
-
-
-    <div class='banner-img'>
-        <div class='banner-text'>
-                    It's 5 O'Clock Somewhere
-        </div>
-    </div>
-
-    </div>
-
-    <div class='location'>
-    </div>
-
-    <div class='drink drink-display-top'>
-        <div class='top drink__img'>
-            <img src='gin_tonic.jpg' alt='drink-img' />
-        </div><div class='top drink__name'>
-            <div class='drink__name--centered'>
-                Gin & Tonic
-    </div>
-        </div>
-
-    </div><div class='drink drink-display-bottom'>
-        <div class='bottom drink__ingredients'>
-            <div class='drink__ingredients--aligned'>
-                <h3>Ingredients</h3>
-                Gin - 3 oz.
-                Tonic - 5 oz.
-                Lime Wedge
-    </div>
-        </div><div class='bottom drink__instructions'>
-            <h2>Directions</h2>
-            Fill with ice
-            Pour gin and tonic
-            Squeeze lime
-            Stir
-
-    </div>
-
-    </div>
-
-
-        <script src="app.js"></script>
-
-
-</body>
-
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet"></link>
+        <link href="dist/css/style.css" rel="stylesheet"></link>
+    </head>
+    <body>
+        <header>
+            <div class="container banner">
+                <!-- <div class='martini-img'>
+                    <img width='150' src='https://mastergolflivestream.com/images/cocktails-clipart-cocktail-glass-2.jpg'/>
+                </div> -->
+                <h1 class="banner__text">It's 5 O'Clock Somewhere</h1>
+            </div>
+            <div class="container location">
+                <h2 class="location__text">
+                    It's 5:18pm in <strong>Mumbai, India</strong> &mdash;<br />you should have a&hellip;
+                </h2>
+            </div>
+        </header>
+        <main class="content drink container">
+            <article class="content__body">
+                <h3 class="drink__name">Gin & Tonic</h3>
+                <div class="drink__ingredients">
+                    <h4 class="drink__subhead">Ingredients</h4>
+                    <ul>
+                        <li>Gin - 3 oz.</li>
+                        <li>Tonic - 5 oz.</li>
+                        <li>Lime Wedge</li>
+                    </ul>
+                </div>
+                <div class="drink__instructions">
+                    <h4 class="drink__subhead">Directions</h4>
+                    <ol>
+                        <li>Fill with ice.</li>
+                        <li>Pour gin and tonic. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget dui massa.</li>
+                        <li>Squeeze lime into drink and place atop glass.</li>
+                        <li>Stir and enjoy.</li>
+                    </ol>
+                </div>
+            </article>
+            <aside class="content__side">
+                <div class="drink__img">
+                    <img alt="Gin and Tonic" src="dist/images/gin_tonic_2.jpg"/>
+                </div>
+                <div class="drink__flavor-text">
+                    <p>The gin & tonic was introduced by the army of the British East India Company in India. In the 1700s it was discovered that quinine could be used to prevent and treat malaria. The quinine was drunk in tonic water, however the bitter taste was unpleasant. British officers took to adding a mixture of water, sugar, lime and gin to the quinine in order to make the drink more palatable.</p>
+                </div>
+            </aside>
+        </main>
+        <footer class="footer container">
+            Footer text copyright &copy; 2019
+        </footer>
+        <!-- <script src="app.js"></script> -->
+    </body>
 </html>
